@@ -8,19 +8,24 @@ void display () {
 
     //draw;
     //generate a triangle when have a red, green and blue and each vertex;
+    //triangle 1
     glBegin(GL_TRIANGLES);
     glColor3f(1.0, 0.0, 0.0);
-    glVertex2f(0.0,5.0);
+    glVertex2f(0.0, 5.0);
     glColor3f(0.0, 1.0, 0.0);
     glVertex2f(4.0,-3.0);
     glColor3f(0.0, 0.0, 1.0);
-    glVertex3f(-4.0,-3.0, 0.0);
+    glVertex2f(-4.0,-3.0);
+
+
+
+
     glEnd();
     glFlush();
 }
 
 void backgroundDisplay(){
-    glClearColor(0.0,0.0,0.0,1.0);
+    glClearColor(0.0,0.0,0.0,0.0);
 }
 
 void reshapeFigure(int w, int h){
