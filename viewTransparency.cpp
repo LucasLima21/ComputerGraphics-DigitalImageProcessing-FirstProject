@@ -9,14 +9,14 @@ void display () {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glBegin(GL_QUADS);
-    glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
+    glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
     glVertex2f(-2.0, 2.0);
     glVertex2f(-2.0,-2.0);
     glVertex2f(2.0,-2.0);
     glVertex2f(2.0,2.0);
 
 
-    glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
+    glColor4f(0.0f, 1.0f, 0.0f, 0.75f);
     glVertex2f(0.0, 4.0);
     glVertex2f(0.0, 0.0);
     glVertex2f(4.0, 0.0);
@@ -29,7 +29,7 @@ void display () {
 }
 
 void backgroundDisplay(){
-    glClearColor(0.5f,0.5f,0.5f,1.0f);
+    glClearColor(0.0f,0.0f,0.0f,1.0f);
 }
 
 void reshapeFigure(int width, int height){
@@ -46,7 +46,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_RGB);
     glutInitWindowPosition(100, 100);
     glutInitWindowSize(500, 500);
-    glutCreateWindow("Blending Colors");
+    glutCreateWindow("Blending in Transparency");
 
     glutDisplayFunc(display);
     glutReshapeFunc(reshapeFigure);
