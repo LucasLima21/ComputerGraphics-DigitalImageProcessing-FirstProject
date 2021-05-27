@@ -16,7 +16,8 @@ void display () {
     glVertex2f(2.0,2.0);
 
 
-    glColor4f(0.0f, 1.0f, 0.0f, 0.75f);
+    glColor4f(0.0f, 1.0f, 0.0f, 0.5f);
+    // quarto parâmetro da função acima modifica a transparência
     glVertex2f(0.0, 4.0);
     glVertex2f(0.0, 0.0);
     glVertex2f(4.0, 0.0);
